@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buy Now</title>
+<style>
+  
+  body, html, #father{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    background-color:black ;
+  }
+
+    #father {
+        margin-top: -17px;
+      }
+
+   
+  #mainpic{
+    position: relative;
+    top: 40px;
+    left: 15%;
+    box-shadow: 0 0 40px darkred;
+    width: 400px;
+    height: 600px;
+    background: url(image.jpg);
+  }
+
+  #mainpic:hover {
+    cursor: none;
+  }
+
+  
+  .menu-icon{
+      padding: 10px 20px 1px;
+      position: relative;
+      top: 50px;
+      margin-top: -220px;
+      margin-left: -3px;
+      border-radius: 7px;
+      border: solid black;
+      background-color: #2a2a2a;
+      color: white;
+      cursor: pointer;
+      font-size: 40px;
+      display: inline-block;
+
+    }
+
+    .menu-icon:hover {
+      color: darkred;
+    }
+
+    /*ima make it slide */
+    .menu {
+    margin: 0 auto;
+    width: 240px;
+    height: 310px;
+    top: 74px;
+    position: absolute;
+    left: -240px;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+  }
+
+
+    .menu a {
+    display:block;
+    padding: 15px ;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+  }
+
+ .menu a:hover {
+    background:#2a2a2a ; 
+    color: darkred;
+    padding: 17px;
+    transition: 0.5s;
+  }
+
+   li{
+    list-style-type: none;
+  }
+
+   .menu:last-child a { 
+    border-bottom: none; 
+  }
+
+  #menuToggle:checked ~ .menu { 
+    position: absolute;left: 0; 
+  }
+
+  #menuToggle{
+      display: none;
+    }
+
+  footer {
+  background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.7), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(1,0,0,1), rgba(1,0,0,1)); 
+   margin-top: 3%;
+   padding-top: .5%;
+   background-size: cover;
+  width: 100%;
+ }
+
+ a{
+  text-decoration: none;
+ }
+ 
+
+
+   /*Table 1 upper left side*/
+
+   .table{
+   	background: darkred;
+   	width: 750px;
+   	height: 170px;
+   	position: relative;
+   	float: right;
+   	margin-top: -359px;
+    left: 0px;
+    display: inline-block;
+    display: none;
+   }
+	/*Slide down div for table 1 */
+	.dropdown {
+		background: none;
+		color: white;
+		  width: 750px;
+   		height: 40px;
+   		display: inline-block;
+   		float: right;
+   		margin-top: -400px;
+   		position: relative;
+    	border-bottom: blue;
+    	border: 500px;
+	}
+
+  .dropdown:hover {
+    cursor: pointer;
+    background: darkred;
+  }
+
+  #active {
+  color:darkred;
+  background-color:#2a2a2a ;
+  padding: 17px;
+}
+/* ALL FOR RIGHTSIDE BOX*/
+h4{
+    padding-top: -2px;
+    display: inline;
+    position: relative;
+    bottom: -20px;
+    font-size: 20px
+}
+span{
+  display: inline;
+  position: relative;
+  font-size: 30px;
+  float: right;
+  left: -10px;
+  bottom: 10px;
+}
+
+#amazon{
+  width: 200px;
+  padding: 0;
+  background:black;
+  margin-left:20px;
+  margin-top: 20px;
+  border-radius: 11px;
+  display: inline-block;
+  position: relative;
+    left: 10px;
+}
+
+#amazon:hover{
+   background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   cursor: pointer;
+}
+
+  #walmart {
+    width: 200px;
+    padding: 0;
+    background:black;
+    margin-left:20px;
+    margin-top: 20px;
+    border-radius: 11px;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+}
+
+#walmart:hover{
+   background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   cursor: pointer;
+}
+
+ #linkedin {
+    width: 200px;
+    padding: 0;
+    background:black;
+    margin-left:20px;
+    margin-top: 20px;
+    border-radius: 11px;
+    display: inline-block;
+    position: relative;
+    left: 50px;
+}
+
+#linkedin:hover{
+   background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   cursor: pointer;
+}
+ul {
+  margin-top: 2px;
+  color: white;
+}
+
+
+
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".dropdown").click(function(){
+            $(".table").slideToggle();
+        });
+    });
+</script>
+
+</head>
+
+<body>
+<div  id="father">
+
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776;</label>
+
+<nav class="menu">
+    <b>
+    <a href ="home.html">HOME</a>
+    <a href ="about.html">ABOUT</a>
+    <a href ="index.html">TRAILER</a>
+    <a href ="gallery.html">GALLERY</a>
+    <a href ="buynow.html" id="active">BUY NOW</a>
+    <b>
+</nav>
+
+
+
+<div id="mainpic">
+ 
+</div>
+
+
+
+<div class="dropdown">
+ <h4> BLU-RAY™ & DVD </h4>
+ <h4><span>+</span></h4>
+
+
+</div>
+
+
+<div class="table">
+
+<!--Boxes inside table -->
+<div id="amazon">
+<a href="https://www.amazon.com/Heat-Blu-ray-Al-Pacino/dp/B010GJM7NM/ref=sr_1_2?ie=UTF8&qid=1484004216&sr=8-2&keywords=heat+movie"> <img src="amazon.png" alt="amazon bruh" height="70px" width="200px" style="border-top-left-radius: 10px; border-top-right-radius: 10px; background: white;" >
+  <ul>
+  <li style="margin-left: -5px;">Own Blu-ray $9.96</li>
+  <li style="margin-left: 4px;">Own DVD $6.19</li>
+  </ul>
+</a>
+<!-- close  tag for amazon -->
+</div>
+
+<div id="walmart">
+<a href="https://www.walmart.com/ip/Heat-dvd/53081296"> <img src="walmart.png" alt="amazon bruh"  height= "70px" width="200px" style="border-top-left-radius: 10px; border-top-right-radius: 10px; background: white;">
+  <ul>
+  <li style="margin-left: -5px;">Own Blu-ray $12.99</li>
+  <li style="margin-left: 4px;">Own DVD $9.54</li>
+  </ul>
+</a>
+<!--close tag for walmart -->
+</div>
+
+<div id="linkedin">
+<a href="https://www.linkedin.com/in/joelisaelrosario"> <img src="linkedin20.png" alt="amazon bruh"  height= "70px" width="200px" style="border-top-left-radius: 10px; border-top-right-radius: 10px; background: white;">
+  <ul>
+  <li style="margin-left: -5px;">Own Blu-ray Free 99</li>
+  <li style="margin-left: 4px;">Own DVD Free 99</li>
+  </ul>
+</a>
+<!--Linkedin Close Tag -->
+</div>
+
+<!-- close  tag for table -->
+</div>
+
+
+
+
+
+
+ <!--/DIV is for father  -->
+</div>
+
+ 
+
+
+
+</body>
+</html>

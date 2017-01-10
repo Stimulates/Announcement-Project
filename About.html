@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <style>
+
+   body, html, #father{
+     margin: 0 auto;
+     padding: 0;
+     max-width: 100%;
+     max-height: 100%;
+     position: relative;
+     background-color:black ;
+   }
+
+     #father {
+         margin-top: -17px;
+
+       }
+
+     
+    footer a {
+      color:white;
+      text-decoration: none;
+      padding-right: 8px;
+    }
+
+
+   .swerve a:hover{
+      background-color:#2a2a2a ;
+      color: #3C9BED;
+      padding: 6px;
+      transition: 0.5s;
+    }
+
+   #logo{
+     position: relative;
+     width: 540px;
+     height: 120px;
+     background: black;
+     top: 20px;
+     left: 30%;
+
+
+   }
+
+   #cafepic{
+     position: relative;
+     width: 540px;
+     height: 140px;
+     top: 60px;
+     left: 310px;
+     -webkit-filter: brightness(70%);
+     -moz-transition: brightness(70%);
+     -ms-transition: brightness(70%);
+     -o-transition: brightness(70%);
+
+
+   }
+
+   .menu-icon{
+       padding: 10px 20px 1px;
+       position: relative;
+       top: 50px;
+       margin-top: -220px;
+       margin-left: -3px;
+       border-radius: 7px;
+       border: solid black;
+       background-color: #2a2a2a;
+       color: white;
+       cursor: pointer;
+       font-size: 40px;
+       display: inline-block;
+     }
+
+     .menu-icon:hover{
+         color: #3C9BED;
+     }
+
+     /*ima make it slide */
+     .menu {
+     margin: 0 auto;
+     width: 240px;
+     height: 310px;
+     top: 74px;
+     position: absolute;
+     left: -240px;
+     transition: all .4s ease-in-out;
+     -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+     -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+   }
+
+
+     .menu a {
+     display:block;
+     padding: 15px ;
+     text-align: left;
+     text-decoration: none;
+     color: white;
+     background-color: black;
+     background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+   }
+
+  .menu a:hover {
+     background:#2a2a2a ; 
+     color: #3C9BED;
+     padding: 17px;
+     transition: 0.5s;
+   }
+
+    li{
+     list-style-type: none;
+   }
+
+    .menu:last-child a { 
+     border-bottom: none; 
+   }
+
+   #menuToggle:checked ~ .menu { 
+     position: absolute;left: 0; 
+   }
+
+   #menuToggle{
+       display: none;
+     }
+
+   footer {
+   background-color: black;
+     background: -moz-linear-gradient(bottom, rgba(0,0,0,.7), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(1,0,0,1), rgba(1,0,0,1)); 
+    background-size: cover;
+    top: -28px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+
+  }
+
+
+  #active {
+   color:#3C9BED;
+   background-color:#2a2a2a ;
+   padding: 17px;
+  }
+
+  #hidden {
+         width: 700px;
+         left: 360px;
+         top: -81px;
+         height: 451px;
+         overflow: hidden;
+         color: white;
+         position: relative;
+         display: inline-block;
+         font-family: 'Brawler', serif;
+         font-size: 26px;
+         background-color: black;
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+     
+     }
+     #scroll{
+         width: 80%;
+         height: 451px;
+         overflow: scroll;
+         display: inline-block;
+         
+         
+  }
+
+  span {
+   color: darkred;
+  }
+
+  .color2{
+   color: #3C9BED;
+  }
+     
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Brawler" rel="stylesheet">
+</head>
+<body>
+  <div id="father">
+    <input id="menuToggle" type="checkbox"> <label class="menu-icon" for="menuToggle">&#9776;</label>
+    <nav class="menu">
+      <b><a href="home.html">HOME</a> <a href="about.html" id="active">ABOUT</a> <a href="index.html">TRAILER</a> <a href="gallery.html">GALLERY</a> <a href="buynow.html">BUY NOW</a> <b></b></b>
+    </nav>
+    <div id="logo">
+      <b><img alt="Heat Logo" class="pull" height="550px" src="finalheatlogo.png" width="540px"></b>
+    </div><b></b>
+    <div id="cafepic">
+      <b><img height="450px" src="aboutpage.jpg" width="800px"></b>
+    </div><b><!--Table for inside --></b>
+    <div id="hidden">
+      <b></b>
+      <center>
+        <b></b>
+        <div id="scroll">
+          <b></b>
+          <p><b><b><span>Heat</span> <b>is a 1995 American crime film written, produced and directed by Michael Mann, and starring Robert De Niro, Al Pacino, and Val Kilmer.It is a remake of Mann's 1989 TV movie L.A. Takedown. De Niro plays Neil McCauley, a professional thief, while Pacino plays Lt. Vincent Hanna, a LAPD robbery-homicide detective tracking down McCauley's crew. The story is based on the former Chicago police officer Chuck Adamson's pursuit during the 1960s of a criminal named McCauley, after whom De Niro's character is named.<br>
+          <br>
+          <b><span>Heat</span> <b>was a commercial success, grossing $67 million in the United States and $187 million worldwide (about $295 million in 2017) against a $60 million budget. It was well received by critics. The film-critic aggregator Rotten Tomatoes reports <i>86%</i> positive reviews, calling the film "an engrossing crime drama that draws compelling performances from its stars and confirms Michael Mann's mastery of the genre."</b></b></b></b></b></p><b><br>
+          <br></b>
+          <p><b><u><span class="color2">THINGS YOU PROBABLY DIDN’T KNOW ABOUT</span> <span>HEAT</span></u></b></p><b><br></b>
+          <p><b><b><span class="color2">1 . THERE ARE NO CG EFFECTS USED IN THE HEIST THAT OPENS THE MOVIE.<b><br></span>
+          <br></b> The production actually tipped over an armored car while shooting on location. it was top-heavy and weighted to make the stunt possible.</b></b></p><b><br></b>
+          <p><b><b><span class="color2">2 . DE NIRO AND PACINO HARDLY APPEAR ONSCREEN TOGETHER.<b><br></span>
+          <br></b> The two stars spend less than 10 minutes of the entire 170-minute film in one another’s presence.</span></b></b></p><b><br></b>
+          <p><b><span class="color2">3. TO PREPARE FOR THE DOWNTOWN SHOOTOUT SEQUENCE, THE ACTORS WENT THROUGH THREE MONTHS OF FIREARM.</span> <b><br>
+          <br>
+          An estimated 800-1,000 blank rounds were used per take while shooting the scene.</b></b></p><b><br></b>
+          <p><b><b><span class="color2">4 . ALL THE GUN SOUND EFFECTS IN THE SHOOTOUT SEQUENCE WERE TAKEN FROM ONSET AUDIO.<b><br></span>
+          <br></b> Mann originally planned to add gunshots to the audio in post-production. But when he tried to do so, he didn’t feel like it sounded real enough, so he kept the audio as is.</b></b></p>
+          <p><b><br></b></p>
+          <p><b><u><span class="color2">THANK YOU FOR READING. HOPE YOU ENJOYED MY SITE</span></u> <span class="color2"></span></b></p><b><span class="color2"><br></span></b>
+        </div>
+      </center><b></b>
+    </div>
+  </div><!--Table ends -->
+  <center>
+    <b></b>
+    <footer>
+      <b></b>
+      <div class="swerve">
+        <b><b><a href="http://www.warnerbros.com/privacy" style="font-family: times;">Privacy</a> <a href="http://www.warnerbros.com/privacy/terms.html" style="font-family: times;">Terms Of Use</a> <a href="http://www.warnerbros.com/privacy-center-wb-privacy-policy#p5" style="font-family: times;">Ad Choices</a> <a href="http://www.parentalguide.org/" style="font-family: times;">Parental Guide</a> <a href="http://www.filmratings.com/search.html?filmTitle=heat&x=0&y=0" style="font-family: times;">Film Rating</a> <b></b></b></b>
+      </div>
+    </footer>
+  </center>
+</body>
+</html>

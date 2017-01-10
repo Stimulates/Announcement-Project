@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style>
+
+  html, body, #father{
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  html {
+    position: relative;
+    top: -200px;
+    background: black;
+  }
+
+		#background {
+    background:  no-repeat;
+    background-size: cover; 
+    -ms-transform: translateX(-50%) translateY(-50%);
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+   position: fixed;
+   top: 170px;
+   left: 360px;
+   width: auto;
+   height: auto;
+   z-index: -100;   
+}
+
+.menu-icon{
+      padding: 10px 20px 1px;
+      padding-bottom: 1px;
+      position: relative;
+      top: 50px;
+      margin-top: 140px;
+      margin-left: -3px;
+      border-radius: 7px;
+      border: solid black;
+      background-color: #2a2a2a;
+      color: darkred;
+      cursor: pointer;
+      font-size: 40px;
+      display: inline-block;
+
+    }
+  .menu-icon:hover{
+      color: #3C9BED;
+  }
+
+.menu {;
+    margin: 0 auto;
+    width: 240px;
+    height: 307px;
+    top: 256px;
+    position: absolute;
+    left: -240px;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+  }
+
+    #menuToggle:checked ~ .menu { 
+    position: absolute;left: 0; 
+  }
+
+  #menuToggle{
+      display: none;
+    }
+
+    .menu a {
+    display:block;
+    padding: 15px ;
+    text-align: left;
+    text-decoration: none;
+    color: darkred;
+    background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+  }
+
+ .menu a:hover {
+    background:#2a2a2a ; 
+    color: #3C9BED;
+    padding: 17px;
+    transition: 0.5s;
+  }
+
+ footer a {
+     color:darkred;
+     text-decoration: none;
+     padding-right: 8px;
+   }
+  .swerve a:hover{
+     background-color: #2a2a2a;
+     color: #3C9BED;
+     padding: 6px;
+     transition: 0.5s;
+   }
+
+  footer {
+   margin-top: 48.2%;
+   padding-top: .5%;
+   font-size: 18px;
+   background-size: cover;
+   background-color: black;
+   background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+   width: 100%;
+   position: relative;
+ }
+ .swerve {
+  position: relative;
+ }
+ #active {
+  color:#3C9BED;
+  background-color:#2a2a2a ;
+  padding: 17px;
+ }
+	</style>
+</head>
+
+<body>
+
+
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776;</label>
+
+<nav class="menu">
+    <b>
+    <a href ="home.html" id="active">HOME</a>
+    <a href ="about.html">ABOUT</a>
+    <a href ="index.html">TRAILER</a>
+    <a href ="gallery.html">GALLERY</a>
+    <a href ="buynow.html">BUY NOW</a>
+    <b>
+</nav>
+
+<div id="onthenav">
+
+</div>
+
+<div id="background">
+  <video autoplay muted id="background"><source src="finalclip.mp4" type="video/mp4"></video>
+</div>
+
+<center>
+<footer>
+
+     <div class="swerve">
+     <b>
+      <a href="http://www.warnerbros.com/privacy"> Privacy </a> 
+      <a href="http://www.warnerbros.com/privacy/terms.html">Terms Of Use</a>  
+      <a href="http://www.warnerbros.com/privacy-center-wb-privacy-policy#p5"> Ad Choices </a>
+      <a href="http://www.parentalguide.org/"> Parental Guide</a>
+      <a href="http://www.filmratings.com/search.html?filmTitle=heat&x=0&y=0"> Film Rating</a>
+      <b>
+     </div>
+ 
+</footer>
+</center>
+
+</body>
+</html>
+
+<!--heat shoot scence 5:02- cut guy dying in car then get some cop shoot scence about 1-2min imovie -->

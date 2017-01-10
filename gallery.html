@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <style>
+   
+   body, html, #father{
+     margin: 0 auto;
+     padding: 0;
+     max-width: 100%;
+     max-height: 100%;
+     position: relative;
+     background-color:black ;
+   }
+
+     #father {
+         margin-top: -17px;
+       }
+
+     
+    footer a {
+      color:white;
+      text-decoration: none;
+      padding-right: 8px;
+    }
+
+
+   .swerve a:hover{
+      background-color:#2a2a2a ;
+      color: #3C9BED;
+      padding: 6px;
+      transition: 0.5s;
+    }
+
+   #mainpic{
+     position: relative;
+     width: 800px;
+     height: 450px;
+     top: 20px;
+     left: 22%;
+     box-shadow: 0 0 40px #3C9BED;
+
+
+   }
+
+   #tableholder {
+     position: relative;
+     top: 70px;
+     left: 200px;
+     overflow: scroll;
+     position: relative;
+     width: 70%;
+
+   }
+
+   .inner {
+     -webkit-filter: brightness(35%);
+     -moz-transition: brightness(35%);
+         -ms-transition: brightness(35%);
+         -o-transition: brightness(35%);
+
+   }
+   
+   .inner:hover {
+     -webkit-filter: brightness(100%);
+     -moz-transition: brightness(100%);
+         -ms-transition: brightness(100%);
+         -o-transition: brightness(100%);
+   }
+
+   .menu-icon{
+       padding: 10px 20px 1px;
+       position: relative;
+       top: 50px;
+       margin-top: -220px;
+       margin-left: -3px;
+       border-radius: 7px;
+       border: solid black;
+       background-color: #2a2a2a;
+       color: white;
+       cursor: pointer;
+       font-size: 40px;
+       display: inline-block;
+     }
+
+     .menu-icon:hover{
+         color: #3C9BED;
+     }
+
+     /*ima make it slide */
+     .menu {;
+     margin: 0 auto;
+     width: 240px;
+     height: 310px;
+     top: 74px;
+     position: absolute;
+     left: -240px;
+     transition: all .4s ease-in-out;
+     -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+     -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+   }
+
+
+     .menu a {
+     display:block;
+     padding: 15px ;
+     text-align: left;
+     text-decoration: none;
+     color: white;
+     background-color: black;
+     background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+   }
+
+  .menu a:hover {
+     background:#2a2a2a ; 
+     color: #3C9BED;
+     padding: 17px;
+     transition: 0.5s;
+   }
+
+    li{
+     list-style-type: none;
+   }
+
+    .menu:last-child a { 
+     border-bottom: none; 
+   }
+
+   #menuToggle:checked ~ .menu { 
+     position: absolute;left: 0; 
+   }
+
+   #menuToggle{
+       display: none;
+     }
+
+   footer {
+   background-color: black;
+     background: -moz-linear-gradient(bottom, rgba(0,0,0,.7), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(1,0,0,1), rgba(1,0,0,1)); 
+    margin-top: 5.5%;
+    padding-top: .5%;
+    background-size: cover;
+   width: 100%;
+   position: relative;
+   font-family: none;
+  }
+
+   .swerve{
+     position: relative;
+    }
+
+  #active {
+   color:#3C9BED;
+   background-color:#2a2a2a ;
+   padding: 17px;
+  }
+
+  </style>
+</head>
+<body>
+  <div id="father">
+    <input id="menuToggle" type="checkbox"> <label class="menu-icon" for="menuToggle">&#9776;</label>
+    <nav class="menu">
+      <b><a href="home.html">HOME</a> <a href="about.html">ABOUT</a> <a href="index.html">TRAILER</a> <a href="gallery.html" id="active">GALLERY</a> <a href="buynow.html">BUY NOW</a> <b></b></b>
+    </nav>
+    <div id="mainpic">
+      <b><img alt="Heat Logo" class="pull" height="450px" src="http://www1.pictures.zimbio.com/mp/4P6zI7V71Xux.jpg" width="800px"></b>
+    </div><b></b>
+    <div id="tableholder">
+      <b></b>
+      <table>
+        <tr>
+          <td><img class="inner" height="150px;" src="http://hdmoviespoint.com/wp-content/uploads/2014/11/Heat-Movie-1080p-HD-Download.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://1.bp.blogspot.com/-ke2UmSJ3O7c/UjdKy98TkYI/AAAAAAAAOrM/ZHA5lAPTFLA/s1600/Jon+Voight+Heat+movie.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://www.space.ca/wp-content/uploads/2015/09/heat3.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://application.denofgeek.com/pics/film/romfizzle/04.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://screenrant.com/wp-content/uploads/Michael-Mann-Al-Pacino-and-Robert-De-Niro-in-Heat.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://www.slantmagazine.com/assets/film/heat.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="https://s-media-cache-ak0.pinimg.com/originals/6e/ae/98/6eae984e9d8783e7ce49b0048007dae4.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="https://criticismsfromtherecliner.files.wordpress.com/2014/02/7rrurcguwkzguryyugfxn0fgrrr.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://psimovie.com/images/heat/scr-4.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://www1.pictures.zimbio.com/mp/NtfAQAYp9aax.jpg" width="200px"></td>
+          <td><img class="inner" height="150px;" src="http://www.originalprop.com/blog/wp-content/uploads/2009/11/HEAT-Blu-Ray-Disc-Screencapture-Pacino-DeNiro-21.jpg" width="200px"></td>
+        </tr>
+      </table>
+    </div>
+    <center>
+      <b></b>
+      <footer>
+        <b></b>
+        <div class="swerve">
+          <b><b><a href="http://www.warnerbros.com/privacy">Privacy</a> <a href="http://www.warnerbros.com/privacy/terms.html">Terms Of Use</a> <a href="http://www.warnerbros.com/privacy-center-wb-privacy-policy#p5">Ad Choices</a> <a href="http://www.parentalguide.org/">Parental Guide</a> <a href="http://www.filmratings.com/search.html?filmTitle=heat&x=0&y=0">Film Rating</a> <b></b></b></b>
+        </div>
+      </footer>
+    </center>
+  </div><b>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js">
+  </script> 
+  <script>
+     $('img').attr('onclick', 'switchMainPic(this)');
+
+     function switchMainPic(element) {
+       $(".pull").attr('src', $(element).attr('src'));
+     }
+  </script></b>
+</body>
+</html>

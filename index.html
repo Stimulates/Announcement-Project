@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heat Movie Promo</title>
+  <style>
+
+     body {
+         margin: 0;
+         padding: 0;
+         position: relative;
+     }
+         #video{
+         -ms-transform: transform: translate(-50%, -50%);
+         -moz-transform: transform: translate(-50%, -50%);
+        -webkit-transform: transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         min-width: 100%;
+         min-height: 100%;
+         width: auto;
+         height: auto;
+             }
+
+         #video:hover{
+             cursor: none;
+         }
+
+           .exit-icon{
+       padding: 0px 7px 1px;
+       margin-top: -37px;
+       position: relative;
+       top: 30px;
+       float: right;
+       border-radius: 7px;
+       border: solid black;
+       background-color: #2a2a2a;
+       background: -moz-linear-gradient(bottom, rgba(0,0,0,.7), rgba(0,0,0,.1)); 
+       background: -webkit-linear-gradient(bottom, rgba(1,0,0,1), rgba(1,0,0,1));
+       cursor: pointer;
+       font-size: 40px;
+       display: inline-block;
+
+     }
+
+     .exit-icon:hover{
+   transform: rotate(30deg);
+   animation: roll 1s infinite;
+   transform: rotate(30deg);
+     }
+   
+     @keyframes roll {
+    0% {
+     transform: rotate(0);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+  }
+
+
+  </style>
+  <script type="text/javascript">
+     window.onload=function(){
+     var overlay = document.getElementById('video');
+     var video = document.getElementById('video');
+     var videoPlaying = false;
+     overlay.onclick = function() {
+     if (videoPlaying) {
+     video.pause();
+     videoPlaying = false;
+  }
+  else {
+     video.play();
+     videoPlaying = true;
+  }
+  }
+  }
+
+     
+  </script>
+</head>
+<body>
+  <div id="mother">
+    <video autoplay="" id="video"><source src="intro.mp4" type="video/mp4"></video> <!--mother div -->
+  </div>
+  <div class="exit-icon">
+    <a href="home.html" style="text-decoration: none; color: darkred">&#10006;</a>
+  </div>
+</body>
+</html>
